@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'rubydns', '1.0.2'
-  spec.add_dependency 'rexec'
+  spec.add_dependency 'childprocess'
 end

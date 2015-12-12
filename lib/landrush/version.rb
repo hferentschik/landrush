@@ -1,3 +1,3 @@
 module Landrush
-  VERSION = "0.18.0"
+  VERSION = "0.2.0"
 end

@@ -1,0 +1,138 @@
+GIT
+  remote: git://github.com/mitchellh/vagrant.git
+  revision: 84ae22e9765bf2e5475fc66bfb48d0dd6b74b5ee
+  ref: v1.7.1
+  specs:
+    vagrant (1.7.1)
+      bundler (>= 1.5.2, < 1.8.0)
+      childprocess (~> 0.5.0)
+      erubis (~> 2.7.0)
+      hashicorp-checkpoint (~> 0.1.1)
+      i18n (~> 0.6.0)
+      listen (~> 2.7.11)
+      log4r (~> 1.1.9, < 1.1.11)
+      net-scp (~> 1.1.0)
+      net-sftp (~> 2.1)
+      net-ssh (>= 2.6.6, < 2.10.0)
+      nokogiri (= 1.6.3.1)
+      rb-kqueue (~> 0.2.0)
+      rest-client (>= 1.6.0, < 2.0)
+      wdm (~> 0.1.0)
+      winrm (~> 1.1.3)
+
+PATH
+  remote: .
+  specs:
+    landrush (0.2.0)
+      childprocess
+      rubydns (= 1.0.2)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    akami (1.3.1)
+      gyoku (>= 0.4.0)
+      nokogiri
+    builder (3.2.2)
+    byebug (8.2.1)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    celluloid-io (0.16.2)
+      celluloid (>= 0.16.0)
+      nio4r (>= 1.1.0)
+    childprocess (0.5.8)
+      ffi (~> 1.0, >= 1.0.11)
+    domain_name (0.5.25)
+      unf (>= 0.0.5, < 1.0.0)
+    erubis (2.7.0)
+    ffi (1.9.10)
+    gssapi (1.0.3)
+      ffi (>= 1.0.1)
+    gyoku (1.3.1)
+      builder (>= 2.1.2)
+    hashicorp-checkpoint (0.1.4)
+    hitimes (1.2.3)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    httpclient (2.7.0.1)
+    httpi (0.9.7)
+      rack
+    i18n (0.6.11)
+    listen (2.7.12)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    little-plugger (1.1.4)
+    log4r (1.1.10)
+    logging (1.8.2)
+      little-plugger (>= 1.1.3)
+      multi_json (>= 1.8.4)
+    metaclass (0.0.4)
+    mime-types (2.99)
+    mini_portile (0.6.0)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
+    multi_json (1.11.2)
+    net-scp (1.1.2)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.2)
+    netrc (0.11.0)
+    nio4r (1.1.1)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
+    nori (1.1.5)
+    rack (1.6.4)
+    rake (10.4.2)
+    rb-fsevent (0.9.6)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rb-kqueue (0.2.4)
+      ffi (>= 0.5.0)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    rubydns (1.0.2)
+      celluloid (= 0.16.0)
+      celluloid-io (= 0.16.2)
+      timers (~> 4.0.1)
+    rubyntlm (0.1.1)
+    savon (0.9.5)
+      akami (~> 1.0)
+      builder (>= 2.1.2)
+      gyoku (>= 0.4.0)
+      httpi (~> 0.9)
+      nokogiri (>= 1.4.0)
+      nori (~> 1.0)
+      wasabi (~> 1.0)
+    timers (4.0.4)
+      hitimes
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.1)
+    uuidtools (2.1.5)
+    wasabi (1.0.0)
+      nokogiri (>= 1.4.0)
+    wdm (0.1.1)
+    winrm (1.1.3)
+      gssapi (~> 1.0.0)
+      httpclient (~> 2.2, >= 2.2.0.2)
+      logging (~> 1.6, >= 1.6.1)
+      nokogiri (~> 1.5)
+      rubyntlm (~> 0.1.1)
+      savon (= 0.9.5)
+      uuidtools (~> 2.1.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug
+  childprocess
+  landrush!
+  mocha
+  rake
+  rubydns (= 1.0.2)
+  vagrant!

@@ -7,7 +7,7 @@ module Landrush
     end
 
     def execute
-      ARGV.shift # flush landrush from ARGV, RExec wants to use it for daemon commands
+      ARGV.shift # flush landrush from ARGV
 
       command = ARGV.first || 'help'
       if DAEMON_COMMANDS.include?(command)

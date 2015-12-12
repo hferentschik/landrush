@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # to be in the :plugins group for Vagrant to detect and load it in development
 
 gem 'rubydns', '1.0.2'
-gem 'rexec'
+gem 'childprocess'
 gem 'rake'
 
 # Vagrant's special group
