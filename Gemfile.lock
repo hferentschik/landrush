@@ -25,7 +25,7 @@ PATH
   specs:
     landrush (0.2.0)
       childprocess
-      rubydns (= 1.0.2)
+      rubydns (= 0.8.5)
 
 GEM
   remote: https://rubygems.org/
@@ -35,16 +35,29 @@ GEM
       nokogiri
     builder (3.2.2)
     byebug (8.2.1)
-    celluloid (0.16.0)
-      timers (~> 4.0.0)
-    celluloid-io (0.16.2)
-      celluloid (>= 0.16.0)
-      nio4r (>= 1.1.0)
+    celluloid (0.17.2)
+      celluloid-essentials
+      celluloid-extras
+      celluloid-fsm
+      celluloid-pool
+      celluloid-supervision
+      timers (>= 4.1.1)
+    celluloid-essentials (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-extras (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-fsm (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-pool (0.20.5)
+      timers (>= 4.1.1)
+    celluloid-supervision (0.20.5)
+      timers (>= 4.1.1)
     childprocess (0.5.8)
       ffi (~> 1.0, >= 1.0.11)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
     erubis (2.7.0)
+    eventmachine (1.0.8)
     ffi (1.9.10)
     gssapi (1.0.3)
       ffi (>= 1.0.1)
@@ -79,7 +92,6 @@ GEM
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
     netrc (0.11.0)
-    nio4r (1.1.1)
     nokogiri (1.6.3.1)
       mini_portile (= 0.6.0)
     nori (1.1.5)
@@ -94,10 +106,8 @@ GEM
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
-    rubydns (1.0.2)
-      celluloid (= 0.16.0)
-      celluloid-io (= 0.16.2)
-      timers (~> 4.0.1)
+    rubydns (0.8.5)
+      eventmachine (~> 1.0.0)
     rubyntlm (0.1.1)
     savon (0.9.5)
       akami (~> 1.0)
@@ -107,7 +117,7 @@ GEM
       nokogiri (>= 1.4.0)
       nori (~> 1.0)
       wasabi (~> 1.0)
-    timers (4.0.4)
+    timers (4.1.1)
       hitimes
     unf (0.1.4)
       unf_ext
@@ -134,5 +144,5 @@ DEPENDENCIES
   landrush!
   mocha
   rake
-  rubydns (= 1.0.2)
+  rubydns (= 0.8.5)
   vagrant!

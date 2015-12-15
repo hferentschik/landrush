@@ -33,7 +33,7 @@ module Landrush
        fake_host = 'boogers.vagrant.dev'
        fake_ip = '99.98.97.96'
        Store.hosts.set(fake_host, fake_ip)
-       query(fake_host).must_equal fake_ip
+       query(fake_host).must_equal fake_ip+'.'
        query_ptr(fake_host).must_equal fake_ip+'.'
      end
      it 'responds properly to configured cname entries' do
